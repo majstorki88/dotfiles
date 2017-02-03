@@ -124,3 +124,6 @@ fi
 if [ -f ~/.docker-compose-completion.sh ]; then
     . ~/.docker-compose-completion.sh
 fi
+
+# Set editor of choice
+EDITOR=vim
