@@ -1,6 +1,7 @@
 [user]
 	name = Jordan Starcher
 	email = jstarcher@gmail.com
+        signingkey = 36F53245E14C3624
 [alias]
 	br = branch
 	ci = commit
