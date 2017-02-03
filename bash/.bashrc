@@ -116,6 +116,11 @@ if ! shopt -oq posix; then
   fi
 fi
 
+# Completion
 if [ -f ~/.docker-completion.sh ]; then
     . ~/.docker-completion.sh
+fi
+
+if [ -f ~/.docker-compose-completion.sh ]; then
+    . ~/.docker-compose-completion.sh
 fi
