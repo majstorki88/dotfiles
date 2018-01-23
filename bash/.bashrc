@@ -126,4 +126,10 @@ if [ -f ~/.docker-compose-completion.sh ]; then
 fi
 
 # Set editor of choice
-EDITOR=vim
+export EDITOR=vim
+
+# Machine-specific overrides
+if [ -f ~/.bashrc_local ]; then
+    . ~/.bashrc_local
+fi
+

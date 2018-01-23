@@ -29,7 +29,24 @@ servers = (
     port = "6667";
     use_ssl = "no";
     ssl_verify = "no";
+  },
+  {
+    address = "returnofthe.irc.slack.com";
+    chatnet = "ReturnOfTheSlack";
+    user = "jstarcher";
+    nick = "jstarcher";
+    password = "returnofthe.Sfwgq6dK5iC05Aw2riTR";
     autoconnect = "yes";
+    use_ssl = "ON";
+    port = "6667";
+  },
+  {
+    address = "irc.snoonet.org";
+    chatnet = "Snoonet";
+    user = "iamaquitter";
+    nick = "iamaquitter";
+    use_ssl = "ON";
+    port = "6697";
   }
 );
 
@@ -96,14 +113,10 @@ chatnets = {
     max_whois = "30";
   };
   SILC = { type = "SILC"; };
-  freenode = {
-    type = "IRC";
-    autosendcmd = "^nick jstarcher;";
-  };
-  "irc.freenode.net" = {
-    type = "IRC";
-    autosendcmd = "^nick jstarcher;";
-  };
+  freenode = { type = "IRC"; autosendcmd = "^nick jstarcher;"; };
+  "irc.freenode.net" = { type = "IRC"; autosendcmd = "^nick jstarcher;"; };
+  ReturnOfTheSlack = { type = "IRC"; };
+  Snoonet = { type = "IRC"; };
 };
 
 channels = (
